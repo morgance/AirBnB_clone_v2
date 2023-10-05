@@ -7,7 +7,7 @@ import os
 
 
 def do_pack():
-"""compress folder """
+    """Generate archive """
     try:
         if not os.path.exists("versions"):
             local('mkdir -p versions')
