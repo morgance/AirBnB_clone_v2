@@ -10,7 +10,7 @@ def do_pack():
 """compress folder """
     try:
         if not os.path.exists("versions"):
-            local('mkdir versions')
+            local('mkdir -p versions')
         t = datetime.now()
         f = "%Y%m%d%H%M%S"
         archive_path = 'versions/web_static_{}.tgz'.format(t.strftime(f))
